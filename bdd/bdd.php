@@ -2,9 +2,9 @@
 
 try{
 
-	$user = "root";
-	$pass = "root";
-	$bdd = new PDO('mysql:host=localhost;dbname=commentaires', $user, $pass);
+	$user = "user";
+	$pass = "motdepasse";
+	$bdd = new PDO('mysql:host=localhost;dbname=lampbdd', $user, $pass);
 
 }catch(PDOException $e){
 	print "Erreur! :" .$e->getMessage() .
